@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Para o amor da minha vida!</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <p>
+                Meu amorzinho, olha eu aparecendo por aqui de novo. Hoje, de um jeitinho um tanto quanto diferente, rs. Hoje, na verdade, passei muito tempo desocupado e decidi colocar em prática o meu curso. Apesar de não ser formado em engenharia da computação, sempre gostei muito de programar. Por que então não programar uma surpresa para você? Esse sábado passei o tempo de noite bem desocupado, então resolvi me aventurar um pouquinho e criar algumas coisinhas para você.
+            </p>
+            <p>
+                Cada linha de código escrita por trás desse bonito site representa um pouquinho do meu amor por você. Para ser mais exato, 375 linhas de códigos, que expressam grande parte do meu amor e carinho por você. Sei que muito provavelmente você não faz nem ideia do que estou falando, mas logo abaixo desse mundaréu de palavras, vai ter algumas fotinhas nossas e um temporizador cronometrando o tempo que estamos juntos. Obrigado por tantas lembranças e por compartilhar um pouco mais dos seus últimos 9 meses comigo.
+            </p>
+            <p>
+                Quero dizer a você que sim, sou extremamente feliz e realizado ao seu lado, além de ser imensamente grato a Deus por ter me dado a oportunidade de amar você e de poder cuidar de ti. Sei que os desafios de um relacionamento à distância muitas vezes parecem grandes, mas confio plenamente em você, assim como na direção de Deus sob nossas vidas! Sei que sempre falo para você, e talvez esteja até um pouco saturada de ouvir, mas você é quase um sonho para mim. Acordar todas as manhãs e ter a certeza do seu amor é algo surreal e não consigo me acostumar com a ideia de ter ainda, a despeito dos quase 10 meses juntos.
+            </p>
+            <p>
+                Quero que saiba que esse "pequeno" trabalho, que claramente poderia virar um TCC, é apenas um detalhe perto de tudo aquilo que eu desejo ter e fazer ao seu lado! Quero me comprometer contigo todos os dias, a te amar, te respeitar e te ajudar, naquilo que for necessário. Sei que muitas vezes o tempo é escasso e a rotina consome grande parte do nosso tempo, mas jamais quero deixar de priorizar o "nós".
+            </p>
+            <p>
+                É bem verdade que você, melhor do que eu, saiba que somos bem diferentes em vários aspectos, e alguns deles até te gere algum tipo de desconforto. Mas a grande verdade é que eudesejo, todos os dias, aprender a melhor maneira de lidar e aprender a te amar! Desejo todos os dias encontrar uma nova maneira de fazer as coisas darem certo, a despeito das nossas diferenças! Quero aprender mais sobre você, a forma como gosta de ser amada e a maneira que mais consiga se sentir bem e acolhida por mim! Quero que tenha leveza e que você encontre em mim um lar para descansar quando as coisas estirem um tanto quanto pesadas!
+            </p>
+            <p>
+                Por fim, gostaria de dizer que te amo muito e que eu realmente espero que goste da demonstração, fiz com muito carinho! Não repara muito nas coisas que poderiam ser melhor, como eu te disse, sou curioso, então as coisas que fiz aqui foi tudo meio de última hora, mas prometo que volto outra hora com algo bem mais elaborado, rs! Eu te amo, não esquece nunca, tá?!
+            </p>
+
+            <h1>Estamos juntos há:</h1>
+        <div class="timer" id="timeTogether">Carregando...</div>
+
+        <div class="photo-carousel">
+          <div class="carousel-track">
+            <img src="foto1.jpeg" alt="Foto 1" />
+            <img src="foto2.jpeg" alt="Foto 2" />
+            <img src="foto3.jpeg" alt="Foto 3" />
+            <img src="foto4.jpeg" alt="Foto 4" />
+            <img src="foto5.jpeg" alt="Foto 5" />
+            <img src="foto6.jpeg" alt="Foto 5" />
+            <img src="foto7.jpeg" alt="Foto 5" />
+            <img src="foto8.jpeg" alt="Foto 5" />
+            <img src="foto9.jpeg" alt="Foto 5" />
+            <img src="foto10.jpeg" alt="Foto 5" />
+            <img src="foto11.jpeg" alt="Foto 5" />
+            <img src="foto12.jpeg" alt="Foto 5" />
+            <img src="foto13.jpeg" alt="Foto 5" />
+            <img src="foto14.jpeg" alt="Foto 5" />
+            <img src="foto15.jpeg" alt="Foto 5" />
+            <img src="foto16.jpeg" alt="Foto 5" />
+            <img src="foto17.jpeg" alt="Foto 5" />
+            <!-- Adicione quantas fotos quiser -->
+          </div>
+        </div>
+
+        <script>
+          // Coloque aqui a data que vocês começaram a namorar
+          const startDate = new Date("2024-07-27T00:00:00"); // Exemplo: 1º de agosto de 2022
+
+          function updateTimer() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            const seconds = Math.floor(diff / 1000) % 60;
+            const minutes = Math.floor(diff / (1000 * 60)) % 60;
+            const hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            const years = Math.floor(days / 365);
+            const remainingDays = days % 365;
+            const months = Math.floor(remainingDays / 30);
+            const finalDays = remainingDays % 30;
+
+            document.getElementById("timeTogether").innerHTML = `
+              ${years} anos, ${months} meses, ${finalDays} dias<br>
+              ${hours} horas, ${minutes} minutos, ${seconds} segundos
+            `;
+          }
+
+          setInterval(updateTimer, 1000);
+          updateTimer(); // Atualiza imediatamente ao carregar
+        </script>
+        </div>
+        <header>
+            <h1>Abra apenas em caso de emergência</h1>
+        </header>
+
+        <script src="carousel-parallax.js"></script>
+
+        
+    </body>
+</html>
